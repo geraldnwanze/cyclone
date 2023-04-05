@@ -1,0 +1,13 @@
+<?php
+
+require_once "./vendor/autoload.php";
+
+use App\Core\Console;
+use App\Core\Cyclone;
+
+$cyclone = new Cyclone;
+
+$cyclone->handle(
+    Console::input(),
+    Console::output()
+);
