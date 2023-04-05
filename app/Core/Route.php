@@ -10,12 +10,12 @@ class Route
         'POST' => []
     ];
 
-    public static function get($path, $action)
+    public static function get($path, array $action)
     {
         self::$routes['GET'][$path] = $action; 
     }
 
-    public static function post($path, $action)
+    public static function post($path, array $action)
     {
         self::$routes['POST'][$path] = $action; 
     }

@@ -1,7 +1,8 @@
 <?php
 
+use App\Controllers\TestController;
 use App\Core\Route;
 
-Route::get('/', 'hello world');
+Route::get('/', [TestController::class, 'index']);
 
-Route::post('/post', 'post something');
+Route::post('/post', [TestController::class, 'post']);
